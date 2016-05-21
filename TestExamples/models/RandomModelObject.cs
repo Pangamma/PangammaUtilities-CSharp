@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnitTests.models
+namespace TestExamples.models
 {
     public class RandomModelObject
     {

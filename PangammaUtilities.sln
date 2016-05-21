@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PangammaUtilities", "PangammaUtilities\PangammaUtilities.csproj", "{AE59CB0C-6F5F-4BE8-935D-F77948F1950B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{ED2C40E5-06CF-4965-AB7A-65632CAFC039}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExamples", "TestExamples\TestExamples.csproj", "{ED2C40E5-06CF-4965-AB7A-65632CAFC039}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
