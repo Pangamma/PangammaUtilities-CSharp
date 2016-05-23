@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\SqlExtensions.cs" />
+    <Compile Include="Extensions\ToFileSizeLongExtension.cs" />
     <Compile Include="Extensions\ToNullableStringExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

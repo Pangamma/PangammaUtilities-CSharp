@@ -81,13 +81,12 @@ namespace TestExamples
             RandomModelObject obj = new RandomModelObject()
             {
                 NonNullableEnum = "Cat".ToNullable<AnimalTypeEnum>() ?? AnimalTypeEnum.Bird,
-                NullableEnum = "Dog".ToNullable<AnimalTypeEnum>() // Should be the dog type.
+                NullableEnum = "3".ToNullable<AnimalTypeEnum>() // Should be the dog type.
             };
             Assert.AreEqual(AnimalTypeEnum.Cat, obj.NonNullableEnum, "Should be parsed to Cat type. ('Cat')");
             Assert.AreEqual(AnimalTypeEnum.Dog, obj.NullableEnum, "Should be parsed to Dog type.('Dog')");
 
             // These will fail to parse and will return null.
-            Assert.AreNotEqual(AnimalTypeEnum.Dog, "3".ToNullable<AnimalTypeEnum>(), "Unfortunately, this will NOT parse properly. :(");
             Assert.IsNull("This won't parse".ToNullable<AnimalTypeEnum>(), "Note that bad inputs from forms will be handled just fine.");
             Assert.IsNull("".ToNullable<AnimalTypeEnum>(), "Note that bad inputs from forms will be handled just fine.");
         }
@@ -95,7 +94,6 @@ namespace TestExamples
         [TestMethod]
         public void IsFasterThanTryParse_GoodInput()
         {
-            
             string someDecimalValue = "1024.30";
             var sw = new Stopwatch();
             int numIterations = 10000;

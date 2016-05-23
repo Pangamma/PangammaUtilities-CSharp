@@ -45,15 +45,19 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
     <Compile Include="models\AnimalTypeEnum.cs" />
     <Compile Include="models\RandomModelObject.cs" />
+    <Compile Include="models\TypeConvertableObject.cs" />
     <Compile Include="ToNullableStringExtensionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TypeConvertTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PangammaUtilities\PangammaUtilities.csproj">
