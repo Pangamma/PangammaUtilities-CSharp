@@ -9,6 +9,7 @@ namespace TestExamples.models
     public class RandomModelObject
     {
         public int? ID { get; set; } // non created ModelObjects have null ID's.
+        public string Label { get; set; }
 
         public bool NonNullableBoolean { get; set; }
         public decimal NonNullableDecimal { get; set; }
