@@ -1,4 +1,5 @@
 // Extra spaces? No problem.
+
 int? n = " 9 ".ToNullable<int>(); // --> 9
 
 bool? b = "true".ToNullable<bool>(); // --> true  
