@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ED2C40E5-06CF-4965-AB7A-65632CAFC039}</ProjectGuid>
+    <ProjectGuid>{7AA71D0B-8F6C-4852-A771-58012760E317}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestExamples</RootNamespace>
-    <AssemblyName>TestExamples</AssemblyName>
+    <RootNamespace>Pangamma.Utilities</RootNamespace>
+    <AssemblyName>Pangamma.Utilities</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -45,25 +46,19 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
-          <Private>False</Private>
-        </Reference>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="models\AnimalTypeEnum.cs" />
-    <Compile Include="models\RandomModelObject.cs" />
-    <Compile Include="models\TypeConvertableObject.cs" />
-    <Compile Include="ToNullableStringExtensionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TypeConvertTests.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PangammaUtilities\PangammaUtilities.csproj">
-      <Project>{ae59cb0c-6f5f-4be8-935d-f77948f1950b}</Project>
-      <Name>PangammaUtilities</Name>
-    </ProjectReference>
+    <Compile Include="SqlExtensions\SqlExtensions.cs" />
+    <Compile Include="StringExtensions\models\AnimalTypeEnum.cs" />
+    <Compile Include="StringExtensions\models\RandomModelObject.cs" />
+    <Compile Include="StringExtensions\models\TypeConvertableObject.cs" />
+    <Compile Include="StringExtensions\ToFileSizeLongExtension.cs" />
+    <Compile Include="StringExtensions\ToNullableStringExtension.cs" />
+    <Compile Include="StringExtensions\ToNullableStringExtensionTests.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

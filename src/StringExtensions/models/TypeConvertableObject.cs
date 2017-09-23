@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestExamples.models
+namespace Pangamma.Utilities
 {
     /// <summary>
     /// Just a proof of concept for type conversions. This shows you can use custom classes

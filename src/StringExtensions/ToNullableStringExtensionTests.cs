@@ -1,10 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PangammaUtilities.Extensions;
 using System.Diagnostics;
-using TestExamples.models;
 
-namespace TestExamples
+namespace Pangamma.Utilities
 {
     [TestClass]
     public class ToNullableStringExtensionTests

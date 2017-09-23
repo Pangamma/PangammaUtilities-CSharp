@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PangammaUtilities.Extensions
+namespace Pangamma.Utilities
 {
     public static class SqlExtensions
     {

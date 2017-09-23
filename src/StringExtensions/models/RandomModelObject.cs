@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestExamples.models
+namespace Pangamma.Utilities
 {
     public class RandomModelObject
     {

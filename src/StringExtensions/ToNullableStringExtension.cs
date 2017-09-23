@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PangammaUtilities.Extensions
+namespace Pangamma.Utilities
 {
     /// <summary>
     /// Developed by Taylor Love

@@ -1,0 +1,6 @@
+D:\git\PangammaUtilities\Utilities\bin\Debug\Pangamma.Utilities.dll
+D:\git\PangammaUtilities\Utilities\bin\Debug\Pangamma.Utilities.pdb
+D:\git\PangammaUtilities\Utilities\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\git\PangammaUtilities\Utilities\obj\Debug\Pangamma.Extensions.csprojResolveAssemblyReference.cache
+D:\git\PangammaUtilities\Utilities\obj\Debug\Pangamma.Utilities.dll
+D:\git\PangammaUtilities\Utilities\obj\Debug\Pangamma.Utilities.pdb
