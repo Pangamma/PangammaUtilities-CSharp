@@ -10,9 +10,9 @@ null will be returned. No null exception will be thrown.
 
 
 <h3>Examples</h3>
-int? numVotes = "123".ToNullable<int>();<br>
-decimal price = tbxPrice.Text.ToNullable<decimal>() ?? 0.0M;<br>
-PetTypeEnum petType = "Cat".ToNullable<PetTypeEnum>() ?? PetTypeEnum.DefaultPetType;<br>
-PetTypeEnum petTypeByIntValue = "2".ToNullable<PetTypeEnum>() ?? PetTypeEnum.DefaultPetType;<br>
+int? numVotes = "123".ToNullable&lt;int&gt;();<br>
+decimal price = tbxPrice.Text.ToNullable&lt;decimal&gt;() ?? 0.0M;<br>
+PetTypeEnum petType = "Cat".ToNullable&lt;PetTypeEnum&gt;() ?? PetTypeEnum.DefaultPetType;<br>
+PetTypeEnum petTypeByIntValue = "2".ToNullable&lt;PetTypeEnum>() ?? PetTypeEnum.DefaultPetType;<br>
 string thisWillNotThrowException = null;<br>
-int? nullsAreSafe = thisWillNotThrowException.ToNullable<int>();<br>
+int? nullsAreSafe = thisWillNotThrowException.ToNullable&lt;int&gt;();<br>
