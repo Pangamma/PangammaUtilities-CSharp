@@ -1,4 +1,4 @@
-<h1>ToStringNullable</h1>
+<h2>ToNullableStringExtension</h2>
 More convenient than using T.TryParse(string, out T).
 Works with primitive types, structs, and enums.
 Tries to parse the string to an instance of the type specified.
