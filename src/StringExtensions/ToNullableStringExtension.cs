@@ -22,8 +22,8 @@ namespace Pangamma.Utilities
         /// So if you have "string s = null;" and then you try "s.ToNullable...",
         /// null will be returned. No null exception will be thrown. 
         /// </para>
-        /// <author>Contributed by Taylor Love (Pangamma)</author>
         /// </summary>
+        /// <author>Contributed by Taylor Love (Pangamma)</author>
         /// <typeparam name="T"></typeparam>
         /// <param name="p_self"></param>
         /// <returns></returns>
