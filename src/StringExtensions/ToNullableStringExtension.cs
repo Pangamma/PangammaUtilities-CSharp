@@ -32,7 +32,7 @@ namespace Pangamma.Utilities
             if (!string.IsNullOrEmpty(p_self))
             {
                 var converter = System.ComponentModel.TypeDescriptor.GetConverter(typeof(T));
-                if (converter.IsValid(p_self)) return (T)converter.converter.ConvertFromInvariantString(p_self);
+                if (converter.IsValid(p_self)) return (T)converter.ConvertFromInvariantString(p_self);
                 if (typeof(T).IsEnum) { T t; if (Enum.TryParse<T>(p_self, out t)) return t;}
             }
 
